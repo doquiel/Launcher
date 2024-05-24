@@ -1,0 +1,51 @@
+appId: 'fglauncher'
+productName: 'Fraternidade Gamer - Launcher'
+artifactName: '${productName}-${version}.${ext}'
+
+copyright: 'Copyright © 2024 Fraternidade Gamer'
+
+asar: true
+compression: 'maximum'
+
+files:
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+
+extraResources:
+  - 'libraries'
+
+# Windows Configuration
+win: 
+  target: 
+    - target: 'nsis'
+      arch: 'x64'
+
+# Windows Installer Configuration
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+
+# macOS Configuration
+mac:
+  target:
+    - target: 'dmg'
+      arch:
+        - 'x64'
+        - 'arm64'
+  artifactName: '${productName}-${version}-${arch}.${ext}'
+  category: 'public.app-category.games'
+
+# Linux Configuration
+linux: 
+  target: 'AppImage'
+  maintainer: 'Matheus Souza Moura'
+  vendor: 'Matheus Souza Moura'
+  synopsis: 'Fraternidade Gamer Launcher'
+  description: 'Launcher oficial dos servidores Fraternidade Gamer.'
+  category: 'Game'
+
+
+directories:
+  buildResources: 'build'
+  output: 'dist'

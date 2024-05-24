@@ -1,0 +1,192 @@
+/* Login form. */
+#loginOfflineForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login cancel button styles. */
+#loginOfflineCancelContainer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+/* Main login container. */
+#loginOfflineContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+/*   transition: filter 0.25s ease;
+  background: rgba(0, 0, 0, 0.85) */;
+}
+
+/* Login cancel button styles. */
+#loginOfflineCancelButton svg {
+  fill: #fff;
+}
+
+#loginOfflineCancelButton:hover svg {
+  transform: scale(1.03); 
+  transition: transform 0.3s ease; 
+}
+#loginOfflineCancelButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+#loginOfflineCancelButton:hover #loginCancelIcon,
+#loginOfflineCancelButton:hover #loginCancelText,
+#loginOfflineCancelButton:focus #loginCancelIcon,
+#loginOfflineCancelButton:focus #loginCancelText {
+  text-shadow: 0px 0px 20px white;
+}
+#loginOfflineCancelButton:hover #loginCancelIcon,
+#loginOfflineCancelButton:focus #loginCancelIcon {
+  box-shadow: 0px 0px 20px white;
+}
+#loginOfflineCancelButton:active #loginCancelIcon,
+#loginOfflineCancelButton:active #loginCancelText {
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+#loginOfflineCancelButton:active #loginCancelIcon {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
+}
+#loginOfflineCancelButton:disabled {
+  pointer-events: none;
+}
+#loginOfflineCancelButton:disabled #loginCancelIcon,
+#loginOfflineCancelButton:disabled #loginCancelText {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Login form anchor styles. */
+#loginOfflineForm a {
+  text-decoration: none;
+}
+#loginOfflineForm a:hover,
+#loginOfflineForm a:focus {
+  color: #a2a2a2;
+  outline: none;
+}
+#loginOfflineForm a:active {
+  color: #8b8b8b;
+}
+
+
+/* Login button styles. */
+
+#loginOfflineButton:hover{
+  transform: scale(1.03); 
+  transition: transform 0.3s ease; 
+}
+
+#loginOfflineButton {
+  height: 60px;
+  width: 300px;
+  font-family: 'SFPro Display Medium';
+  font-style: normal;
+  font-size: 18px;
+  border: none;
+  margin-top: 15px;
+  line-height: 21px;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  color: #FFFFFF;
+  background: #0091FF;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginOffilineButton:hover {
+  background: #00b2ff;
+  transform: scale(1.03); 
+  transition: transform 0.3s ease; 
+}
+#loginOfflineButton[loading] {
+  color: #fff;
+}
+#loginSVG {
+  -webkit-transform: translate3d(0, 0, 0);
+  overflow: visible;
+  transform: rotate(90deg);
+  margin-left: 20px;
+  transition: 0.25s ease;
+  width: 20px;
+  height: 20px;
+}
+#loginOfflineButtonContent {
+  display: flex;
+  align-items: center;
+}
+
+#loginOfflineButton .circle-loader,
+#loginOfflineButton[loading] #loginSVG {
+  display: none;
+}
+#loginOfflineButton[loading] .circle-loader,
+#loginOfflineButton #loginSVG {
+  display: initial;
+}
+
+
+#loginOfflineForm h2 {
+  font-family:"SFPro Display Bold";
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+#loginOfflineForm p {
+  margin-top: 0.5rem;
+  margin-bottom: 20px;
+  color: #8a8a8a;
+  font-size: 16px;
+  max-width: 300px;
+  text-align: center;
+  font-family: "SFPro Display Regular";
+}
+
+.help {
+ display: flex;
+ justify-content: space-between;
+ padding-top: 20px;
+ width: 92%;
+}
+
+.help .texto {
+  font-family: "SFPro Display Regular";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130.52%;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.help .discord a {
+  font-family: "SFPro Display Regular";
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #ffffffce;
+}
+
+.line-solid {
+  width: 300px;
+    height: 1px;
+    margin-top: 32px;
+    background: #4a4d5be3;
+}
+
+#backButton {
+  fill: #fff;
+}

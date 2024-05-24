@@ -1,0 +1,46 @@
+<div id="loginOptionsContainer" style="display: none;">
+
+    <div id="ContainerLogin">
+            <img src="assets/images/samu.png">
+
+
+            <div id="loginOptionsContent">
+                <div class="loginOptionsMainContent">
+                    <img src="assets/images/logocfg.png">
+                    <h2>Opções de login!</h2>
+                    <p>Escolha o método de autenticação que deseja utilizar.</p>
+                    <div class="loginOptionActions">
+                        <div class="loginOptionButtonContainer">
+                            <button id="loginOptionMicrosoft" class="loginOptionButton">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M15.198 32h-15.198v-15.198h15.198zM32 32h-15.198v-15.198h15.198zM15.198 15.198h-15.198v-15.198h15.198zM32 15.198h-15.198v-15.198h15.198z"/>
+</svg>
+
+                                <span><%- lang('loginOptions.loginWithMicrosoft') %></span>
+                            </button>
+                        </div>
+<!--                         <div class="loginOptionButtonContainer">
+                            <button id="loginOptionMojang" class="loginOptionButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M9.213 0c-5.088 0-9.213 4.125-9.213 9.213v22.787h22.787c5.088 0 9.213-4.125 9.213-9.213v-22.787zM22.697 3.459c0.756 0 1.365 3.339 1.365 4.093 0.025 0.771-0.593 1.407-1.365 1.407-0.771 0-1.391-0.636-1.364-1.407 0-0.755 0.615-4.093 1.364-4.093zM19.213 7.328c0.923 0.256 2.776 5.032 4.849 2.959 1.932-1.932 2.735 9.552 2.735 9.552l-2.735-1.365c0 0 0-2.728-4.093-5.457-5.079-3.391-10.923-1.156-10.923 4.088 0 10.713 17.751 6.828 17.751 6.828s-0.005 2.729-2.735 2.729h-16.375c-2.729 0-2.735-2.729-2.735-2.729v-13.645c0-2.735 2.735-2.735 2.735-2.735h5.457c2.729 0 5.459 2.735 5.459 2.735 0-1.989 0.156-2.803 0.437-2.943 0.057-0.027 0.115-0.032 0.172-0.016z"/>
+                                  </svg>
+                                  
+                                <span><%- lang('loginOptions.loginWithMojang') %></span>
+                            </button>
+                        </div> -->
+                        <div class="loginOptionButtonContainer">
+                            <button id="loginOptionOffline" class="loginOptionButton">
+                                <svg fill="#000000" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.6 0 0 100.3 0 224c0 70.1 36.9 132.6 94.5 173.7 9.6 6.9 15.2 18.1 13.5 29.9l-9.4 66.2c-1.4 9.6 6 18.2 15.7 18.2H192v-56c0-4.4 3.6-8 8-8h16c4.4 0 8 3.6 8 8v56h64v-56c0-4.4 3.6-8 8-8h16c4.4 0 8 3.6 8 8v56h77.7c9.7 0 17.1-8.6 15.7-18.2l-9.4-66.2c-1.7-11.7 3.8-23 13.5-29.9C475.1 356.6 512 294.1 512 224 512 100.3 397.4 0 256 0zm-96 320c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64zm192 0c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64z"/></svg>
+                                <span>Login "Offline"</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="loginOptionCancelContainer" style="display: none;">
+                        <button id="loginOptionCancelButton"><%- lang('loginOptions.cancelButton') %></button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <script src="./assets/js/scripts/loginOptions.js"></script>
+</div>

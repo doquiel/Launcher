@@ -1,0 +1,188 @@
+<div id="landingContainer" style="display: none">
+  <div id="upper">
+    <!--         <div id="upperimg">
+ 
+            
+        </div> -->
+    <div class="menu">
+      <div id="image_seal_container">
+        <div id="updateAvailableTooltip">
+          <%- lang('landing.updateAvailableTooltip') %>
+        </div>
+      </div>
+      <img src="assets/images/logocfg.png" />
+      <a href="#" id="start">Ínicio</a>
+      <a href="#" id="settingsMediaButton">Configurações</a>
+      <a href="https://loja.fraternidadegamer.com.br" id="loja">Loja</a>
+      <a
+        href="<%- lang('landing.mediaDiscordURL') %>"
+        class="mediaURL"
+        id="discordURL"
+        >Discord</a
+      >
+      <a
+        href="<%- lang('landing.mediaYoutubeURL') %>"
+        class="mediaURL"
+        id="youtubeURL"
+        >Youtube</a
+      >
+    </div>
+    <div class="userContainer">
+      <div id="user_content">
+        <div id="avatarContainer">
+          <button id="avatarOverlay">
+            <%- lang('landing.usernameEditButton') %>
+          </button>
+        </div>
+        <span id="user_text"><%- lang('landing.usernamePlaceholder') %></span>
+      </div>
+    </div>
+  </div>
+  <div id="carouselInfos">
+    <div class="carousel-wrapper">
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/eventodiario.png" alt="" />
+        <text class="slideText1">Online 24H</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/cobblemon.png" alt="" />
+        <text class="slideText1">Servidor Oficial</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/online24h.png" alt="" />
+        <text class="slideText1">Eventos Diários</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/kits.png" alt="" />
+        <text class="slideText1">Kits</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/ginasios.png" alt="" />
+        <text class="slideText1">Ginásios</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/ligapokemon.png" alt="" />
+        <text class="slideText1">Liga Pokémon</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/breeding.png" alt="" />
+        <text class="slideText1">Breeding</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/megaevo.png" alt="" />
+        <text class="slideText1">Mega Evoluções</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/economia.png" alt="" />
+        <text class="slideText1">Economia</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/comunidade.png" alt="" />
+        <text class="slideText1">Comunidade Unida</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/torneios.png" alt="" />
+        <text class="slideText1">Torneios</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/leilao.png" alt="" />
+        <text class="slideText1">Leilão</text>
+      </div>
+
+      <!-- DUPLICAR PARA EFEITO CONTINUO -->
+
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/eventodiario.png" alt="" />
+        <text class="slideText1">Online 24H</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/cobblemon.png" alt="" />
+        <text class="slideText1">Servidor Oficial</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/online24h.png" alt="" />
+        <text class="slideText1">Eventos Diários</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/kits.png" alt="" />
+        <text class="slideText1">Kits</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/ginasios.png" alt="" />
+        <text class="slideText1">Ginásios</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/ligapokemon.png" alt="" />
+        <text class="slideText1">Liga Pokémon</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/breeding.png" alt="" />
+        <text class="slideText1">Breeding</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/megaevo.png" alt="" />
+        <text class="slideText1">Mega Evoluções</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/economia.png" alt="" />
+        <text class="slideText1">Economia</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/comunidade.png" alt="" />
+        <text class="slideText1">Comunidade Unida</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/torneios.png" alt="" />
+        <text class="slideText1">Torneios</text>
+      </div>
+      <div class="slide-item">
+        <img src="../app/assets/images/slideicons/leilao.png" alt="" />
+        <text class="slideText1">Leilão</text>
+      </div>
+    </div>
+  </div>
+
+  <div id="mainPlay">
+    <div id="news_slider"></div>
+
+    <div id="playButton">
+      <div id="content">
+        <div id="server_status_wrapper">
+          <span class="bot_label" id="landingPlayerLabel"
+            ><%- lang('landing.serverStatus') %></span
+          >
+          <span id="player_count"
+            ><%- lang('landing.serverStatusPlaceholder') %></span
+          >
+        </div>
+      </div>
+
+      <div id="bot_wrapper">
+        <div id="launch_content">
+          <button id="launch_button">Jogar</button>
+        </div>
+        <div id="launch_details">
+          <div id="launch_details_left">
+            <span id="launch_progress_label">0%</span>
+            <div class="bot_divider"></div>
+          </div>
+          <div id="launch_details_right">
+            <progress id="launch_progress" value="22" max="100"></progress>
+            <span id="launch_details_text" class="bot_label"
+              ><%- lang('landing.launchDetails') %></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--     <div id="lower">
+        <div id="left">
+
+        </div>
+        <div id="right">
+        </div>
+    </div> -->
+  <script src="./assets/js/scripts/landing.js"></script>
+</div>
